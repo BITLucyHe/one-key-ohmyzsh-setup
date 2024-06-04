@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/zsh
+source ~/.zshrc
 
 echo "安装powerline字体"
 echo "字体项目原地址：https://github.com/powerline/fonts"
