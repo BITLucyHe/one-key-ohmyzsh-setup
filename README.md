@@ -1,1 +1,1 @@
-# one-key-ohmyzsh-setup
+# 一键配置Oh My Zsh
