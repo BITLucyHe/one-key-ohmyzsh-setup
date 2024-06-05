@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # 简介
 # 这个脚本是安装oh-my-zsh的先决条件，即安装zsh和相关包
