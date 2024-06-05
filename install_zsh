@@ -1,0 +1,65 @@
+#!/bin/bash
+# 这个脚本是安装oh-my-zsh的先决条件，即安装zsh和相关包
+
+export LANG=zh_CN.UTF-8;
+
+os_type=$(uname -s);
+
+echo ""
+echo "检查是否安装git"
+which git &> /dev/null
+if [[ $? -ne 0 ]]; then
+	echo "你还没有安装git哦?";
+	if [[ $os_type == "Darwin" ]]; then
+		echo "你可以通过以下两种命令来安装"
+		echo "1.Homebrew(如果有的话)"
+		echo "brew install git"
+		echo "或者"
+		echo "2.Xcode 命令行工具"
+		echo "xcode-select --install"
+		exit 1
+	elif [[ $os_type == "Linux" ]]; then
+		echo "你可以通过以下命令来安装"
+		echo "sudo apt install git"
+		exit 1
+	fi
+else
+	echo "你的git在 $(which git)";
+	echo "";
+fi;
+
+
+# Install zsh
+echo "检查是否安装zsh"
+which zsh &> /dev/null
+if [[ $os_type == "Linux" ]]; then
+	if [[ $? -ne 0 ]]; then
+		echo "尚未安装zsh"
+		echo "将要运行命令'sudo apt install zsh'"
+		echo "你应该需要输入密码(输入时是看不见密码的)"
+		sudo apt install zsh
+		echo "正在把zsh设为默认shell"
+		chsh -s $(which zsh)
+		touch ~/.zshrc
+		source ~/.zshrc
+		echo "请重新打开终端,然后你会看到zsh!"
+		exit 1
+	else
+		echo "你的zsh在 $(which zsh)"
+		echo ""
+	fi
+elif [[ $os_type == "Darwin" ]]; then
+	echo "你的zsh在 $(which zsh)"
+	echo ""
+fi
+
+
+# config oh-my-zsh
+if echo "$SHELL" | grep -q "zsh"; then
+	chmod +x oh-my-zsh/install.sh 
+	sh oh-my-zsh/install.sh 
+else 
+	echo "你需要把zsh设置为默认shell,然后重新运行此脚本"
+	exit 1
+fi
+
