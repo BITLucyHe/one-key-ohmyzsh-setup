@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/bin/sh
 
 # A Little ReadMe
 # This script is for the prerequisite equippment of oh-my-zsh.
@@ -31,6 +31,7 @@ fi;
 echo "Check the location of the zsh"
 which zsh &> /dev/null
 if [[ $? -ne 0 ]]; then
+	if [[ $(uname) -e Linux]]
 	echo "You need to install a zsh.";
 	echo "Please run the command 'sudo apt install zsh' to install a zsh.";
 	echo 'And run the command "chsh -s $(which zsh)" to set Zsh as the default Shell.';
