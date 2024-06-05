@@ -4,23 +4,26 @@ source ~/.zshrc
 os=$(uname)
 file="$HOME/.zshrc"
 
-echo "安装powerline字体"
+echo "安装powerline字体..."
 echo "字体项目原地址：https://github.com/powerline/fonts"
 chmod +x ../fonts/install.sh
 ../fonts/install.sh 
+echo "完成"
 
 echo ""
-echo "安装自动补全插件"
+echo "安装自动补全插件..."
 echo "项目原地址：https://github.com/zsh-users/zsh-autosuggestions"
 cp -R ../zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions 
+echo "完成"
 
 echo ""
-echo "安装语法高亮插件"
+echo "安装语法高亮插件..."
 echo "项目原地址：https://github.com/zsh-users/zsh-syntax-highlighting"
 cp -R ../zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting 
+echo "完成"
 
 echo ""
-echo "开始更新zsh配置文件"
+echo "开始更新zsh配置文件..."
 echo "关于zsh的主题，我们其实推荐“agnoster”，但是换不换由你自己来决定。"
 echo "你可以访问官网查看效果图：https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster"
 echo "当然，你往后可以随时更换主题。方法在：https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#selecting-a-theme"
@@ -30,6 +33,7 @@ read user_input
 if [[ $os = "Darwin" ]]; then
     if [[ $user_input = "Y" || $user_input = "y" || $user_input = "yes" ]]; then
         sed -i '' 's/^ZSH_THEME=".*$/ZSH_THEME="agnoster"/' $file
+        soure $file
         echo "已更换主题为“agnoster”"
     else 
         echo "没有更换主题"
@@ -38,6 +42,7 @@ elif [[ $os = "Linux" ]]; then
     if [[ $user_input = "Y" || $user_input = "y" || $user_input = "yes" ]]; then
         sed -i 's/^ZSH_THEME=".*$/ZSH_THEME="agnoster"/' $file
         echo "已更换主题为“agnoster”"
+        source $file
     else 
         echo "没有更换主题"
     fi;
