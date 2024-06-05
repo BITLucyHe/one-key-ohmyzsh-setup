@@ -30,6 +30,41 @@ else
 	echo "";
 fi;
 
+# check the sys
+OS=$(uname -s);
+if [[ $OS == "Darwin" ]]; then
+	# Install a zsh for mac
+	echo "检查是否安装zsh"
+	which zsh &> /dev/null
+	if [[ $? -ne 0 ]]; then
+		echo "尚未安装zsh.";
+		echo "将要运行命令'brew install zsh'";
+		brew install zsh;
+		echo "正在把zsh设为默认shell";
+		chsh -s "$(which zsh)";
+		echo "请重新打开终端，然后你会看到zsh!";
+	else
+		echo "你的zsh在路径 $(which zsh).";
+		echo "";
+	fi;
+else
+	# Install a zsh for linux
+	echo "检查是否安装zsh"
+	which zsh &> /dev/null
+	if [[ $? -ne 0 ]]; then
+		echo "尚未安装zsh.";
+		echo "将要运行命令'sudo apt install zsh'";
+		sudo apt install zsh;
+		echo "正在把zsh设为默认shell";
+		chsh -s "$(which zsh)";
+		echo "请重新打开终端，然后你会看到zsh!";
+	else
+		echo "你的zsh在路径 $(which zsh).";
+		echo "";
+	fi;
+
+fi;
+
 # Install a zsh
 echo "检查是否安装zsh"
 which zsh &> /dev/null
