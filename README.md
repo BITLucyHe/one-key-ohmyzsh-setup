@@ -58,7 +58,7 @@
 您有问题就在评论区提建议或者提交request，我们都会查看的
 
 ## 作者和致谢
-作者：BITLucyHe 和 potatotomatoes，我们只是站在巨人的肩膀上，利用一些基础的shell知识，帮助大家配置oh-my-zsh罢了，oh-my-zsh不是我们构建的，如需详细了解oh-my-zsh，请看官方网站<a href=https://github.com/ohmyzsh/ohmyzsh>https://github.com/ohmyzsh/ohmyzsh</a>
+作者：BITLucyHe 和 potatotomatoes，我们只是站在巨人的肩膀上，利用一些基础的shell知识，帮助大家配置oh-my-zsh罢了，oh-my-zsh不是我们构建的，如需详细了解oh-my-zsh，请看[官方网站](https://github.com/ohmyzsh/ohmyzsh>https://github.com/ohmyzsh/ohmyzsh)
 
 ## 联系方式
 BITLucyHe的邮箱: <lucy@bit.edu.cn>
