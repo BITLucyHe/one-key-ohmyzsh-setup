@@ -54,7 +54,7 @@ elif [[ $os_type == "Darwin" ]]; then
 fi
 
 
-# config oh-my-zsh
+# install oh-my-zsh
 if echo "$SHELL" | grep -q "zsh"; then
 	chmod +x oh-my-zsh/install.sh 
 	sh oh-my-zsh/install.sh 
@@ -64,3 +64,7 @@ else
 	exit 1
 fi
 
+# config oh-my-zsh
+echo "开始配置oh-my-zsh"
+chmod +x oh-my-zsh/config 
+./oh-my-zsh/config 

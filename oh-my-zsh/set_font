@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|awk -F"'" '{print $2}')/ font 'DejaVu Sans Mono for Powerline 12'
