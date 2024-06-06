@@ -22,10 +22,13 @@
     <li>
     <code>git clone https://github.com/BITLucyHe/one-key-ohmyzsh-setup</code>
     </li>
+    <li>
+    利用<code>cd <路径></code>命令切换到您所下载的我们文件的目录，利用<code>ls</code>检查是否包含<code>install</code>文件
+    </li>
     <li><code>chmod +x install</code>
     </li>
     <li>
-    接下来您只需重复执行命令<code>./install</code>(大约3~4次，会因您的不同配置而有所不同)，如果小于我们预估的次数，您也不必慌张，直到出现类似以下界面<img src="./assets/finalTerminal.png">
+    接下来您只需重复执行命令<code>./install</code>(大约3~4次，会因您的不同配置而有所不同)，如果大于我们预估的次数，您也不必慌张，因为每个人的操作系统配置不一样，您只要直到出现类似以下界面即可<img src="./assets/finalTerminal.png">
     有一个箭头的标志外观终端，那是我们为您设置的默认配置。
     </li>
 </ol>
@@ -59,6 +62,10 @@
 
 ## 作者和致谢
 作者：BITLucyHe 和 potatotomatoes，我们只是站在巨人的肩膀上，利用一些基础的shell知识，帮助大家配置oh-my-zsh罢了，oh-my-zsh不是我们构建的，如需详细了解oh-my-zsh，请看官方网站<a href=https://github.com/ohmyzsh/ohmyzsh>https://github.com/ohmyzsh/ohmyzsh</a>
+字体网站<a href=https://github.com/powerline/fonts>https://github.com/powerline/fonts</a>
+插件网站1<a href=https://github.com/zsh-users/zsh-autosuggestions>https://github.com/zsh-users/zsh-autosuggestions</a>
+插件网站2<a href=https://github.com/zsh-users/zsh-syntax-highlighting>https://github.com/zsh-users/zsh-syntax-highlighting</a>
 
 ## 联系方式
 BITLucyHe的邮箱: <lucy@bit.edu.cn>
+potatotomatoes的邮箱:<ynjztudou@outlook.com>
