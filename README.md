@@ -7,9 +7,9 @@
 |可获取的配置|
 |---|
 |zsh|
-|oh-my-zsh框架|
-|zsh-autosuggestions插件|
-|zsh-syntax-highlighting插件|
+|oh-my-zsh 框架|
+|自动补全插件|
+|语法高亮插件|
 |Powerline 字体|
 
 ### 项目的起因
@@ -20,7 +20,7 @@
 
 #### I.先决条件
 
-<strong>您需要先安装git，以便克隆我们的仓库</strong>
+<strong>您需要先安装git，以便克隆我们和oh-my-zsh的仓库。</strong>
 
 #### II.使用步骤
 
@@ -30,7 +30,7 @@ cd one-key-ohmyzsh-setup
 chmod +x install
 ```
 
-接下来您只需重复执行命令<code>./install</code>(大约3~4次，会因您的不同配置而有所不同)，如果大于我们预估的次数，您也不必慌张，因为每个人的操作系统配置不一样，您只要直到出现类似以下界面即可<img src="./assets/finalTerminal.png">
+接下来您只需重复执行命令<code>./install</code>（大约3~4次，会因您的不同配置而有所不同），如果大于我们预估的次数，您也不必慌张，因为每个人的操作系统配置不一样，您只要直到出现类似以下界面即可。<img src="./assets/finalTerminal.png">
 有一个箭头的标志外观终端，那是我们为您设置的默认配置。
 
 ## 示例
@@ -41,30 +41,30 @@ chmod +x install
     </li>
     <li>
     在您输入密码后，您的<strong>终端会重启</strong>，不必惊慌，这是因为下载了zsh并且运行命令配置其为默认后，需要重启才能使得zsh为您的默认终端。
-    <br>您的终端在重新启动后大概是这样
+    <br>您的终端在重新启动后大概是这样: 
     <img src="./assets/o2.png">
     当您键入命令<code>echo $SHELL</code>应该会出现含有<code>zsh</code>的结果，如果不是，请您继续执行<code>./install</code>直到出现结果
     </li>
     <li>
-    接着继续再次执行命令<code>./install</code>，会出现以下结果
-    <img src="./assets/o3.png">您的oh-my-zsh框架配置完成!
+    接着继续再次执行命令<code>./install</code>，会出现以下结果: 
+    <img src="./assets/o3.png">您的oh-my-zsh框架配置完成！
     </li>
     <li>
     接着为您配置插件和字体，再次<code>./install</code>
     <img src="./assets/o5.png">
     </li>
     <li>重新开启终端<img src="./assets/finalTerminal.png">
-    <strong>您的终端配置完成了！恭喜!</strong>
+    <strong>您的终端配置完成了！恭喜！</strong>
     </li>
 </ol>
 
-## 贡献指南
+## 杂记
 
-欢迎提issue和pr！我们还是初学者，代码中还有很多不太高明的部分。如果你有什么好的建议，还请斧正！
+创建这个项目的目的一是为了方便配置oh-my-zsh，二是学了一点基础shell知识以后想练练手。可以预见，代码中还有很多粗陋之处，有很多东西处理得不是很好。欢迎提issue和pr！
 
 ## 作者和致谢
 
-作者：@BITLucyHe 和 @potatotomatoes. 我们只是站在巨人的肩膀上，利用一些基础的shell知识，帮助大家配置oh-my-zsh罢了，oh-my-zsh不是我们构建的，如需详细了解oh-my-zsh，请看[官方网站](https://github.com/ohmyzsh/ohmyzsh)。
+作者: [Lucy](https://github.com/BITLucyHe) 和 [potatotomatoes](https://github.com/potatotomatoes). 我们只是站在巨人的肩膀上，利用一些基础的shell知识，帮助大家配置oh-my-zsh罢了，oh-my-zsh不是我们构建的。如需详细了解oh-my-zsh，请看[官方网站](https://github.com/ohmyzsh/ohmyzsh)。
 
 感谢以下开源项目:
 
@@ -78,4 +78,4 @@ chmod +x install
 
 BITLucyHe的邮箱: <lucy@bit.edu.cn>
 
-potatotomatoes的邮箱:<ynjztudou@outlook.com>
+potatotomatoes的邮箱: <ynjztudou@outlook.com>
