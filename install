@@ -32,23 +32,18 @@ fi;
 # Install zsh
 echo "检查是否安装zsh"
 which zsh &> /dev/null
-if [[ $os_type == "Linux" ]]; then
-	if [[ $? -ne 0 ]]; then
-		echo "尚未安装zsh"
-		echo "将要运行命令'sudo apt install zsh'"
-		echo "你应该需要输入密码(输入时是看不见密码的)"
-		sudo apt install zsh
-		echo "正在把zsh设为默认shell"
-		chsh -s $(which zsh)
-		touch ~/.zshrc
-		source ~/.zshrc
-		echo "请重新打开终端,然后你会看到zsh!"
-		exit 1
-	else
-		echo "你的zsh在 $(which zsh)"
-		echo ""
-	fi
-elif [[ $os_type == "Darwin" ]]; then
+if [[ $? -ne 0 ]]; then
+	echo "尚未安装zsh"
+	echo "将要运行命令'sudo apt install zsh'"
+	echo "你应该需要输入密码(输入时是看不见密码的)"
+	sudo apt install zsh
+	echo "正在把zsh设为默认shell"
+	touch ~/.zshrc
+	source ~/.zshrc
+	chsh -s $(which zsh)
+	echo "请重新打开终端,然后你会看到zsh!(然后重新运行此脚本)"
+	exit 1
+else
 	echo "你的zsh在 $(which zsh)"
 	echo ""
 fi

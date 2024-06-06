@@ -63,10 +63,13 @@ fi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|awk -F"'" '{print $2}')/ use-system-font false
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|awk -F"'" '{print $2}')/ font 'DejaVu Sans Mono for Powerline 12'
 
+source ~/.zshrc
+
 echo ""
 echo "提醒："
 echo "大多数oh-my-zsh的主题依赖于Powerline或者Nerd字体"
 echo "这里我已经把powerline字体安装好了,"
 echo "并把“DejaVu Sans Mono for Powerline”设置为了你的终端字体"
 echo "你可以随时在终端的偏好设置中更改"
-echo "至此,你应该可以愉快地使用终端了!"
+echo "请关闭并重启终端"
+echo "然后,你应该可以愉快地使用终端了!"
