@@ -59,6 +59,7 @@ if echo "$SHELL" | grep -q "zsh"; then
 	chmod +x oh-my-zsh/install.sh 
 	sh oh-my-zsh/install.sh 
 else 
+	# 应该不会进入这种情况吧？
 	echo "你需要把zsh设置为默认shell,然后重新运行此脚本"
 	exit 1
 fi
