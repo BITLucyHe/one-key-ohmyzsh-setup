@@ -18,20 +18,26 @@
 
 ## 使用方法
 
-#### I.先决条件
-
-<strong>您需要先安装git，以便克隆我们的oh-my-zsh仓库。</strong>
-
-#### II.使用步骤
-
-```bash
-git clone https://github.com/BITLucyHe/one-key-ohmyzsh-setup.git
-cd one-key-ohmyzsh-setup
+#### I.使用步骤
+<ol>
+<li>
+下载仓库：您可以使用命令<code><br>git clone https://github.com/BITLucyHe/one-key-ohmyzsh-setup.git</code><br>也可以手动下载到您的本地
+</li>
+<li>
+<code>cd one-key-ohmyzsh-setup</code>
+</li>
+<li><code>
 chmod +x install
-```
+</code></li>
 
-接下来您只需重复执行命令<code>./install</code>（大约3~4次，会因您的不同配置而有所不同），如果大于我们预估的次数，您也不必慌张，因为每个人的操作系统配置不一样，您只要直到出现类似以下界面即可。<img src="./assets/finalTerminal.png">
-会出现一个箭头的标志外观终端，那是我们为您设置的默认配置。
+<li>
+接下来您只需重复执行命令<code>./install</code>（大约3次，会因您的不同配置而有所不同），如果大于我们预估的次数，您也不必慌张，因为每个人的操作系统配置不一样，您只要直到出现类似以下界面即可。<img src="./assets/o3.png">
+</li>
+<li>
+<code>./config</code>这会配置我们推荐的oh-my-zsh插件和字体
+</li>
+</ol>
+
 ## 示例
 
 <ol>
@@ -40,19 +46,19 @@ chmod +x install
     </li>
     <li>
     在您输入密码后，您的<strong>终端会重启</strong>，不必惊慌，这是因为下载了zsh并且运行命令配置其为默认后，需要重启才能使得zsh为您的默认终端。
-    <br>您的终端在重新启动后大概是这样: 
-    <img src="./assets/o2.png">
-    当您键入命令<code>echo $SHELL</code>应该会出现含有<code>zsh</code>的结果，如果不是，请您继续执行<code>./install</code>直到出现结果
+    <br>继续<code><./install></code>
+    <img src="./assets/o2.png">这会下载git
     </li>
     <li>
     接着再次执行命令<code>./install</code>，会出现以下结果: 
     <img src="./assets/o3.png">您的oh-my-zsh框架配置完成！
     </li>
     <li>
-    接着为您配置插件和字体，再次<code>./install</code>
+    接着为您配置插件和字体，执行命令<code>./config</code>
+    <img src="./assets/o4.png">
     <img src="./assets/o5.png">
     </li>
-    <li>重新开启终端<img src="./assets/finalTerminal.png">
+    <li>重新开启终端或者重启电脑<img src="./assets/o6.png">
     <strong>您的终端配置完成了！恭喜！</strong>
     </li>
 </ol>
