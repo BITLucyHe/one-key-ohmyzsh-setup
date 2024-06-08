@@ -26,8 +26,7 @@
 <li>
 <code>cd one-key-ohmyzsh-setup</code>
 </li>
-<li><code>
-chmod +x install
+<li><code>chmod +x install
 </code></li>
 
 <li>
